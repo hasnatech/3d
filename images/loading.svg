@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 60px;
+        text-anchor: middle;
+        font-family: Roboto;
+      }
+    </style>
+  </defs>
+  <g id="loading">
+    <text id="Loading..." class="cls-1" x="559.5" y="258.5">Loading...</text>
+  </g>
+</svg>

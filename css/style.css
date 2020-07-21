@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+model-viewer {
+  width: 100%;
+  height: 600px;
+  /*background-color: #efefef;*/
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  min-height: 60px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 5px #00000045;
+          box-shadow: 0 3px 5px #00000045;
+}
+
+header.red {
+  background-color: #e2000f;
+}
+
+header img {
+  height: 60px;
+  width: 138px;
+}
+
+#progress {
+  position: absolute;
+  width: calc(100% / 3);
+  height: 3px;
+  /*box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.25);*/
+  border: 2px solid #b6000F;
+  border-radius: 10px;
+  top: calc(50% - 5px);
+  left: calc(50% - 100% / 6);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.3s;
+  transition: opacity 0.3s 0.3s;
+}
+
+#progress .value {
+  font-size: 80%;
+  margin-top: 10px;
+  color: #fff;
+}
+
+#progress.show {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 1;
+}
+
+#progress > .bar {
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: #b6000F;
+}
+
+.content {
+  max-width: 1120px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.tab button:hover,
+.tab button.active {
+  border-bottom-color: #b6000F;
+}
+
+.tab button {
+  cursor: pointer;
+  border: 0;
+  border-bottom: 2px solid #FFF;
+  padding: 15px;
+  background: #FFF;
+  outline: 0;
+}
+
+.card-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-panel .card {
+  margin: 10px;
+  min-width: 300px;
+  -webkit-box-shadow: 0 3px 5px #00000045;
+          box-shadow: 0 3px 5px #00000045;
+  cursor: pointer;
+}
+
+.card-panel .card .img {
+  height: 200px;
+  text-align: center;
+}
+
+.card-panel .card .title {
+  text-align: center;
+  padding: 15px 5px;
+  color: #fff;
+  background-color: #b6000F;
+}
+
+@media only screen and (max-width: 550px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.pointer {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  --min-hotspot-opacity: 0;
+  -webkit-animation-name: zoom-1;
+          animation-name: zoom-1;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.pointer .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pointer .circle:nth-child(1) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+.pointer .circle:nth-child(2) {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  background-color: rgba(255, 255, 255, 0.548);
+}
+
+.pointer .circle:nth-child(3) {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  background-color: rgba(182, 0, 15, 0.685);
+}
+
+.pointer .circle:nth-child(4) {
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  background-color: #b6000F;
+}
+
+.pointer .circle:nth-child(5) {
+  -webkit-transform: scale(0.15);
+          transform: scale(0.15);
+  background-color: #333;
+}
+
+@-webkit-keyframes zoom-1 {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom-1 {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
